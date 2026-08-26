@@ -1,4 +1,28 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.siteButton {
+  height: 120px;
+  width: 100px;
+  border-radius: 20%;
+  background-color: rgb(8, 91, 129);
+  display: inline-block;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.siteButton svg {
+  width: 60%;
+  height: 60%;
+  color: white;
 }
