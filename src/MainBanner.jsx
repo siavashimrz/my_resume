@@ -8,7 +8,14 @@ export default function MainBanner() {
         rel="noopener noreferrer"
       >
         Simon Says
-      </a>{" "}
+      </a>
+      <a
+        href="https://drums-kit-siavashi.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Drum Kit
+      </a>
     </>
   );
 }
