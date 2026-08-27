@@ -1,9 +1,41 @@
+:root {
+  --first-color: #09637e;
+  --second-color: #088395;
+  --third-color: #7ab2b2;
+  --forth-color: #ebf4f6;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+.main-banner-container {
+  width: 100%;
+  height: 100%;
+  /* flex: 1; */
+  border-radius: 30px;
+  border: 1px solid var(--second-color);
+  box-shadow: 0 0 10px 1px var(--first-color);
+  background-color: var(--first-color);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
 }
 
 .siteButton {
@@ -15,17 +47,38 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: black;
 }
 
 .siteButton svg {
-  background-color: rgb(8, 91, 129);
+  background-color: var(--second-color);
+  padding: 20px;
   height: 100px;
   width: 100px;
   border-radius: 20%;
-  color: white;
+  color: var(--forth-color);
 }
 
 .siteButton p {
-  color: black;
+  color: var(--forth-color);
+  margin: 10px 0 20px;
+  font-weight: 300;
+}
+
+.logo-container {
+  margin-right: 50px;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.logo-container > * {
+  width: 100%;
+  height: 100%;
+  color: var(--forth-color);
+}
+
+.projects-container {
+  margin-left: 50px;
+  gap: 10px;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
 }

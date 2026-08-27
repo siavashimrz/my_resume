@@ -1,5 +1,6 @@
 const projectList = [
   {
+    id: 1,
     title: "Simon Says",
     demoLink: "https://siavashimrz.github.io/react_simon_says/",
     icon: {
@@ -10,6 +11,7 @@ const projectList = [
     },
   },
   {
+    id: 2,
     title: "Drum Kit",
     demoLink: "https://siavashimrz.github.io/react_practice_drums_kit/",
     icon: {
@@ -91,6 +93,7 @@ const projectList = [
     },
   },
   {
+    id: 3,
     title: "Tic Tac Toe",
     demoLink: "https://siavashimrz.github.io/react_tic_tac_toe/",
     icon: {
@@ -101,6 +104,7 @@ const projectList = [
     },
   },
   {
+    id: 4,
     title: "To-Do App",
     demoLink: "https://siavashimrz.github.io/todo_app_react/",
     icon: {
@@ -140,11 +144,56 @@ function ProjectLink({ project }) {
 
 export default function MainBanner() {
   return (
-    <>
-      <header>محمدرضا سیاوشی</header>
-      {projectList.map((project) => (
-        <ProjectLink project={project} />
-      ))}
-    </>
+    <div className="main-banner-container">
+      <div className="logo-container">
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 210.15 129.6"
+        >
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path
+                class="cls-1"
+                d="M84.49,50.17H56.17a8.73,8.73,0,0,0-6.49,2.92h0a9.28,9.28,0,0,0-2.36,6.21V79.78h0a7.67,7.67,0,0,0,15.34,0h0V73.15A7.66,7.66,0,0,1,70,65.53h.62A7.66,7.66,0,0,1,78,73.19v48.74h0a7.67,7.67,0,1,0,15.33,0h0V65.53h0V59.31a9.29,9.29,0,0,0-2-5.81A8.73,8.73,0,0,0,84.49,50.17ZM78,65.53h0Z"
+              />
+              <path
+                class="cls-1"
+                d="M210.15,96.53a7.66,7.66,0,0,0-7.67-7.67h-46.1A7.67,7.67,0,0,1,149,81.58v-7h0a7.67,7.67,0,1,0-15.34,0h0v6.6a7.67,7.67,0,0,1-7.37,7.66h-.59a7.67,7.67,0,0,1-7.38-7.66V32.45h0a7.67,7.67,0,1,0-15.34,0h0V95.06a9,9,0,0,0,8.86,9.14h90.65A7.66,7.66,0,0,0,210.15,96.53Zm-91.83-7.68h0Z"
+              />
+              <path
+                class="cls-1"
+                d="M142.58,114.24h0a8.67,8.67,0,0,0-13,0h0a9.28,9.28,0,0,0-2.36,6.21,9,9,0,0,0,8.86,9.14,8.74,8.74,0,0,0,6.49-2.92h0a9.35,9.35,0,0,0,0-12.42Z"
+              />
+              <path
+                class="cls-1"
+                d="M123,114.24h0a8.67,8.67,0,0,0-13,0h0a9.28,9.28,0,0,0-2.36,6.21,9,9,0,0,0,8.86,9.14,8.74,8.74,0,0,0,6.49-2.92h0a9.35,9.35,0,0,0,0-12.42Z"
+              />
+              <path
+                class="cls-1"
+                d="M46.38,18.27a8.73,8.73,0,0,0,6.49-2.91h0a9.35,9.35,0,0,0,0-12.42h0a8.67,8.67,0,0,0-13,0h0a9.23,9.23,0,0,0-2.36,6.21A9,9,0,0,0,46.38,18.27Z"
+              />
+              <path
+                class="cls-1"
+                d="M85.68,24.78v0H9.14a9.29,9.29,0,0,0-5.81,2A8.76,8.76,0,0,0,0,33.63v6.49H0V62a8.73,8.73,0,0,0,2.92,6.49h0a9.23,9.23,0,0,0,6.21,2.36H29.61a7.67,7.67,0,1,0,0-15.34H23a7.67,7.67,0,0,1-7.66-7.35v-.63A7.67,7.67,0,0,1,23,40.12H85.68a7.67,7.67,0,0,0,0-15.34Z"
+              />
+              <path
+                class="cls-1"
+                d="M91.23,2.92h0a8.66,8.66,0,0,0-13,0h0a9.23,9.23,0,0,0-2.36,6.21,9,9,0,0,0,8.86,9.13,8.7,8.7,0,0,0,6.48-2.91h0a9.35,9.35,0,0,0,0-12.42Z"
+              />
+              <path
+                class="cls-1"
+                d="M65.8,18.27a8.7,8.7,0,0,0,6.48-2.91h0a9.35,9.35,0,0,0,0-12.42h0a8.66,8.66,0,0,0-13,0h0a9.23,9.23,0,0,0-2.36,6.21A9,9,0,0,0,65.8,18.27Z"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div className="projects-container">
+        {projectList.map((project) => (
+          <ProjectLink key={project.id} project={project} />
+        ))}
+      </div>
+    </div>
   );
 }
