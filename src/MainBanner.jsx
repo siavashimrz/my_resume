@@ -146,6 +146,7 @@ export default function MainBanner() {
   return (
     <div className="main-banner-container">
       <div className="logo-container">
+        <div className="logo-left logo-line"></div>
         <svg
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
@@ -188,6 +189,7 @@ export default function MainBanner() {
             </g>
           </g>
         </svg>
+        <div className="logo-right logo-line"></div>
       </div>
       <div className="projects-container">
         {projectList.map((project) => (
