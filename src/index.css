@@ -52,8 +52,8 @@
 .siteButton svg {
   background-color: var(--second-color);
   padding: 20px;
-  height: 100px;
-  width: 100px;
+  /* height: 100px;
+  width: 100px; */
   border-radius: 20%;
   color: var(--forth-color);
 }
@@ -62,6 +62,7 @@
   color: var(--forth-color);
   margin: 10px 0 20px;
   font-weight: 300;
+  text-align: center;
 }
 
 .logo-container {
@@ -90,8 +91,31 @@
 
 .projects-container {
   /* margin-left: 50px; */
-  gap: 10px;
-  display: grid;
+  /* gap: 10px; */
+  /* display: grid; */
   /* grid-template: 1fr 1fr / 1fr 1fr; */
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .projects-container {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .siteButton {
+    width: 70px;
+    margin: 10px 0 0;
+  }
+  .siteButton svg {
+    padding: 10px;
+  }
+  .siteButton p {
+    font-size: 15px;
+  }
 }
