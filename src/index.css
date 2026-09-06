@@ -78,7 +78,7 @@
 .logo-line {
   background-color: var(--forth-color);
   width: 100%;
-  height: 5px;
+  height: 2%;
 }
 
 .logo-container > svg {
